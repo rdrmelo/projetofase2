@@ -1,0 +1,47 @@
+/* minimercado/style.css */
+
+/* Estilos gerais para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0; /* Remove margem padrão do body */
+    background-color: #fff9f9; /* Cor de fundo clara do Bootstrap */
+}
+
+/* Estilo para a imagem do produto */
+main img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
+    height: auto;
+    display: block; /* Remove espaço extra abaixo da imagem */
+    margin-bottom: 15px; /* Espaço abaixo da imagem */
+    border-radius: 8px; /* Cantos arredondados */
+}
+
+/* Estilo para os cards de produtos/serviços (sem usar card do bootstrap ainda) */
+main div {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Estilos para títulos de produtos/serviços */
+h3 {
+    color: #007bff; /* Cor azul primária do Bootstrap */
+    margin-top: 0;
+}
+
+/* Estilos para parágrafos */
+p {
+    color: #030303; /* Cor de texto padrão do Bootstrap */
+}
+
+/* Linha horizontal */
+hr {
+    border-top: 1px solid #ced4da;
+    margin: 30px 0;
+}
+
+/* Você pode adicionar mais estilos aqui conforme avança */

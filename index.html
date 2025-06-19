@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimercado Delícias do Bairro - Início</title>
+
+    <!-- Link para o CSS do Bootstrap via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Link para o SEU arquivo CSS personalizado (style.css na raiz) -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- Cabeçalho Principal do Site com classes Bootstrap -->
+    <header class="bg-primary text-white py-3">
+        <div class="container">
+            <h1 class="text-center mb-0">Minimercado Delícias do Bairro</h1>
+        </div>
+    </header>
+
+    <!-- Barra de Navegação Responsiva com Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Minimercado</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCategorias" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categorias
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownCategorias">
+                            <li><a class="dropdown-item" href="categorias/alimentos.html">Alimentos</a></li>
+                            <li><a class="dropdown-item" href="categorias/bebidas.html">Bebidas</a></li>
+                            <li><a class="dropdown-item" href="categorias/limpeza.html">Limpeza</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicos.html">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="agendamento.html">Cadastro/Agendamento</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal da Página Inicial -->
+    <main class="container my-4">
+        <h2 class="text-center mb-4">Bem-vindo ao Minimercado Delícias do Bairro!</h2>
+        <p class="lead text-center">Seu destino para produtos frescos, bebidas geladas e tudo para a limpeza da sua casa.</p>
+        <p class="text-center">Explore nossas categorias e descubra a qualidade e o bom preço que você merece.</p>
+
+        <!-- Carrossel de Imagens (Bootstrap Carousel) -->
+        <!-- id: identificador único para o carrossel, carousel slide: classes base, data-bs-ride="carousel": inicia o carrossel automaticamente -->
+        <div id="carouselDestaques" class="carousel slide my-5" data-bs-ride="carousel">
+            <!-- carousel-inner: contêiner para os itens do carrossel -->
+            <div class="carousel-inner">
+                <!-- carousel-item: cada slide individual, active: CLASSE ESSENCIAL PARA O PRIMEIRO ITEM -->
+                <div class="carousel-item active">
+                    <!-- d-block: transforma a imagem em bloco, w-100: ocupa 100% da largura, alt e aria-label para acessibilidade -->
+                    <!-- USE IMAGENS DE PLACEHOLDER TEMPORÁRIAS SE NÃO TIVER SUAS IMAGENS LOCAIS, PARA TESTAR -->
+                    <img src="https://placehold.co/1200x400/FF5733/FFFFFF?text=Promo%C3%A7%C3%A3o+1" class="d-block w-100" alt="Promoção de frutas e legumes frescos" aria-label="Imagem de promoções de frutas frescas e legumes variados no minimercado.">
+                    <!-- carousel-caption: para adicionar texto sobre a imagem -->
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-2">
+                        <h5>Ofertas Fresquinhas!</h5>
+                        <p>Qualidade e preço baixo em nossos hortifrútis.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://placehold.co/1200x400/3366FF/FFFFFF?text=Bebidas+Geladas" class="d-block w-100" alt="Variedade de bebidas geladas em prateleiras" aria-label="Corredor de bebidas com diversas opções, como refrigerantes, sucos e águas, mantidas geladas.">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-2">
+                        <h5>Bebidas para Refrescar</h5>
+                        <p>Sua bebida preferida sempre gelada aqui!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://placehold.co/1200x400/33FF57/000000?text=Produtos+de+Limpeza" class="d-block w-100" alt="Prateleira com produtos de limpeza organizados" aria-label="Prateleira de produtos de limpeza, incluindo detergentes, desinfetantes e amaciantes.">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-2">
+                        <h5>Casa Limpa e Cheirosa</h5>
+                        <p>Tudo que você precisa para o seu lar.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Botões de controle Anterior/Próximo do Carrossel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestaques" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselDestaques" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+
+    </main>
+
+    <!-- Rodapé do Site com classes Bootstrap -->
+      <footer class="bg-dark text-white text-center py-3 mt-4">
+        <div class="container">
+            <p class="mb-1">&copy; 2025 Minimercado Delícias do Bairro. Todos os direitos reservados.</p>
+            <p class="mb-1">Desenvolvido por: Rodrigo da Rocha Melo</p>
+            <p class="mb-0">Contato: <a href="rodrigo.melo002@edu.pucrs.br" class="text-white text-decoration-none">rodrigo.melo002@edu.pucrs.br</a></p>
+        </div>
+    </footer>
+
+    <!-- !!! PONTO CRÍTICO 1: Link para o JS do Bootstrap (bundle com Popper.js) !!! -->
+    <!-- ESTE SCRIPT DEVE VIR ANTES DO SEU SCRIPT PERSONALIZADO -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5TLy9AtjNneC4W1l2P4nF2P2nO1j2K0zW+pW2a/QpS0" crossorigin="anonymous"></script>
+
+    <!-- PONTO CRÍTICO 2: Link para o SEU arquivo JavaScript personalizado (script.js na raiz) -->
+    <script src="script.js"></script>
+
+</body>
+</html>
